@@ -1081,12 +1081,12 @@ python-dotenv==1.0.1
 > **변경사항 (Phase 0 검증 결과)**: `pdf2image` 제거 — Document Parse API에 이미지/PDF 직접 전송으로 대체. `httpx` 추가 — Document Parse API 비동기 호출용.
 
 #### 완료 기준
-- [ ] `receipt-tracker` Remote Repository가 생성되어 현재 프로젝트 파일들이 Push 되어 있어야 한다.
-- [ ] 가상환경 폴더 venv가 생성되어 있고, 패키지가 설치되어 있다
-- [ ] `uvicorn backend.main:app --reload` 실행 시 FastAPI 서버가 정상 기동되는지 확인하고 서버가 스타트 되어 있어야 한다
-- [ ] 서버가 잘 동작하는지 테스트 하는 Health Check 기능을 반드시 작성되어 있어야 한다
-- [ ] `http://localhost:8000/docs` Swagger UI가 열린다
-- [ ] `.env` 파일이 `.gitignore`에 포함되어 있다
+- [x] `receipt-tracker` Remote Repository가 생성되어 현재 프로젝트 파일들이 Push 되어 있어야 한다. (https://github.com/swkim-s5data/receipt-tracker)
+- [x] 가상환경 폴더 venv가 생성되어 있고, 패키지가 설치되어 있다 (langchain-upstage 0.7.7, pillow 12.2.0 등)
+- [x] `uvicorn backend.main:app --reload` 실행 시 FastAPI 서버가 정상 기동되는지 확인하고 서버가 스타트 되어 있어야 한다
+- [x] 서버가 잘 동작하는지 테스트 하는 Health Check 기능을 반드시 작성되어 있어야 한다 (`GET /health` → `{"status":"ok"}`)
+- [x] `http://localhost:8000/docs` Swagger UI가 열린다
+- [x] `.env` 파일이 `.gitignore`에 포함되어 있다
 
 ---
 
