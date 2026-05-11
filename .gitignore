@@ -1,0 +1,29 @@
+# 환경변수 및 비밀키
+.env
+.env.local
+.env.production
+
+# MCP 설정 (로컬 전용)
+.mcp.json
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.Python
+
+# 프론트엔드
+node_modules/
+frontend/dist/
+
+# 테스트 임시 파일
+images/pdf_test_output.jpg
+
+# IDE
+.vscode/
+.idea/
